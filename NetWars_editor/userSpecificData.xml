@@ -1,6 +1,6 @@
 <UserFriendly>
  <ObjectLayers>
-  <Layer Name="Terrains" GUID="{25D9417B-334B-4FD0-8EE9-804E4608D542}" Hidden="0" Frozen="1"/>
-  <Layer Name="Main" GUID="{48D1FDC4-8442-43E9-B678-B7806D66CBCD}" Hidden="0" Frozen="0"/>
+  <Layer Name="Terrain" GUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Hidden="0" Frozen="1"/>
+  <Layer Name="Main" GUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Hidden="0" Frozen="0"/>
  </ObjectLayers>
 </UserFriendly>

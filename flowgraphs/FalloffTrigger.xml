@@ -1,0 +1,27 @@
+<Graph Description="" Group="FalloffTrigger" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Start" pos="-200,0,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="3" Class="entity:AreaTrigger" pos="-10,-20,0" flags="0" GraphEntity="0">
+   <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+  </Node>
+  <Node Id="4" Class="Game:LocalPlayer" pos="-120,-170,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="5" Class="Game:DamageActor" pos="150,-120,0" flags="0">
+   <Inputs entityId="0" damage="100" Position="0,0,0"/>
+  </Node>
+  <Node Id="7" Class="entity:SpawnPoint" pos="170,-20,0" flags="0" EntityGUID="{1C892800-556A-491E-B688-09FF52EA2940}" EntityGUID_64="491E556A1C892800">
+   <Inputs entityId="0" Disable="0" Enable="0" Spawn="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="3" nodeOut="1" portIn="Enable" portOut="output" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="3" portIn="Trigger" portOut="Enter" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="3" portIn="Enable" portOut="Enter" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="3" portIn="Spawn" portOut="Enter" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="4" portIn="entityId" portOut="entityId" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

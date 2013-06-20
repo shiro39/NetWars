@@ -1,8 +1,20 @@
 <ObjectLayer>
- <Layer Name="Main" GUID="{48D1FDC4-8442-43E9-B678-B7806D66CBCD}" FullName="Main" External="1" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" Expanded="1" IsDefaultColor="1">
+ <Layer Name="Main" GUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" FullName="Main" External="1" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" Expanded="1" IsDefaultColor="1">
   <LayerObjects>
-   <Object Type="Entity" Layer="Main" LayerGUID="{48D1FDC4-8442-43E9-B678-B7806D66CBCD}" Id="{C25CE62D-3AA7-4AE3-9E9B-EB462C839992}" Name="SpawnPoint_01" Pos="886.72308,1022.0518,431.97211" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="SpawnPoint">
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{1C892800-556A-491E-B688-09FF52EA2940}" Name="SpawnPoint_01" Pos="1075.9745,1131.4625,138.91675" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="SpawnPoint">
     <Properties bEnabled="1" teamName=""/>
+   </Object>
+   <Object Type="Solid" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{2EFF74C1-F366-41CA-9667-105E802282F5}" Name="Plane_03" Pos="911.19458,1128.5111,79.541321" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" Material="EngineAssets/TextureMsg/DefaultSolids" MatLayersMask="0" RndFlags="8" ViewDistRatio="100" LMQuality="1">
+    <Brush ZeroTolerance="0">
+     <Face p1="-56.317383,48.165527,0.502388" p2="-56.317383,-48.165466,0.502388" p3="-56.317383,-48.165466,-0.502388" NumberOfPoints="4" v0="0" v1="1" v2="2" v3="3" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0">
+      <Vertex NumberOfVertices="24" p0="-56.317383,-48.165466,-0.502388" p1="-56.317383,-48.165466,0.502388" p2="-56.317383,48.165527,0.502388" p3="-56.317383,48.165527,-0.502388" p4="-56.317383,48.165527,-0.502388" p5="-56.317383,48.165527,0.502388" p6="56.317383,48.165527,0.502388" p7="56.317383,48.165527,-0.502388" p8="56.317383,48.165527,-0.502388" p9="56.317383,48.165527,0.502388" p10="56.317383,-48.165466,0.502388" p11="56.317383,-48.165466,-0.502388" p12="56.317383,-48.165466,-0.502388" p13="56.317383,-48.165466,0.502388" p14="-56.317383,-48.165466,0.502388" p15="-56.317383,-48.165466,-0.502388" p16="56.317383,48.165527,0.502388" p17="-56.317383,48.165527,0.502388" p18="-56.317383,-48.165466,0.502388" p19="56.317383,-48.165466,0.502388" p20="-56.317383,-48.165466,-0.502388" p21="-56.317383,48.165527,-0.502388" p22="56.317383,48.165527,-0.502388" p23="56.317383,-48.165466,-0.502388"/>
+     </Face>
+     <Face p1="56.317383,48.165527,0.502388" p2="-56.317383,48.165527,0.502388" p3="-56.317383,48.165527,-0.502388" NumberOfPoints="4" v0="4" v1="5" v2="6" v3="7" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="56.317383,-48.165466,0.502388" p2="56.317383,48.165527,0.502388" p3="56.317383,48.165527,-0.502388" NumberOfPoints="4" v0="8" v1="9" v2="10" v3="11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="-56.317383,-48.165466,0.502388" p2="56.317383,-48.165466,0.502388" p3="56.317383,-48.165466,-0.502388" NumberOfPoints="4" v0="12" v1="13" v2="14" v3="15" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="-56.317383,-48.165466,0.502388" p2="-56.317383,48.165527,0.502388" p3="56.317383,48.165527,0.502388" NumberOfPoints="4" v0="16" v1="17" v2="18" v3="19" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="56.317383,48.165527,-0.502388" p2="-56.317383,48.165527,-0.502388" p3="-56.317383,-48.165466,-0.502388" NumberOfPoints="4" v0="20" v1="21" v2="22" v3="23" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+    </Brush>
    </Object>
   </LayerObjects>
  </Layer>
