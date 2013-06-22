@@ -1,0 +1,9 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="100080002" StringGenMask="%ALPHAGLOW%GLOSS_MAP%TESSELLATION" SurfaceType="mat_glass_unbreakable" MatTemplate="" Diffuse="0.0014331344,0.078056589,1" Specular="0,0,0" Emissive="0,0,0" Shininess="24" Opacity="1" GlowAmount="3">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/grass/grass_2_diff.dds">
+   <TexMod TexMod_UOscillatorType="2" TexMod_VOscillatorType="2" TexMod_URotateRate="0.69763184" TexMod_URotatePhase="6.1962891" TexMod_URotateAmplitude="0.098876953" TexMod_VRotatePhase="0.29663086" TexMod_VRotateAmplitude="0.39550781" TexMod_UOscillatorRate="-0.1" TexMod_VOscillatorRate="-0.40000001" TexMod_UOscillatorPhase="0.30000001" TexMod_VOscillatorPhase="0.69999999" TexMod_UOscillatorAmplitude="0.2" TexMod_VOscillatorAmplitude="0.1"/>
+  </Texture>
+  <Texture Map="Specular" File="textures/grass/grass_2_spec.dds"/>
+ </Textures>
+ <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" AmbientMultiplier="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>
