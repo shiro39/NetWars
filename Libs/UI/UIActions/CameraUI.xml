@@ -1,0 +1,26 @@
+<Graph Description="" Group="Camera" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Start" pos="-250,-40,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="2" Class="System:ConsoleVariable" pos="100,-70,0" flags="0">
+   <Inputs CVar="goc_enable" Value="1"/>
+  </Node>
+  <Node Id="5" Class="System:ConsoleVariable" pos="-70,140,0" flags="0">
+   <Inputs CVar="goc_targetz" Value="1"/>
+  </Node>
+  <Node Id="6" Class="System:ConsoleVariable" pos="-50,40,0" flags="1">
+   <Inputs CVar="goc_targety" Value="-2.5"/>
+  </Node>
+  <Node Id="7" Class="System:ConsoleVariable" pos="160,50,0" flags="0">
+   <Inputs CVar="goc_targetx" Value="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="2" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

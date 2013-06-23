@@ -1,0 +1,9 @@
+<ObjectLayer>
+ <Layer Name="Main" GUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" FullName="Main" External="1" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" Expanded="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{1C892800-556A-491E-B688-09FF52EA2940}" Name="SpawnPoint_01" Pos="439.31198,525.01062,673.2323" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="SpawnPoint">
+    <Properties bEnabled="1" teamName=""/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

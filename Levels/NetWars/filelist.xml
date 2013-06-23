@@ -1,6 +1,6 @@
 <download name="netwars" type="Map">
  <index src="filelist.xml" dest="filelist.xml"/>
  <files>
-  <file src="level.pak" dest="level.pak" size="2800803" md5="ae4807231ae1654708fc9b624d838913"/>
+  <file src="level.pak" dest="level.pak" size="2790560" md5="9d410075a206d12c628436a1a917ea7c"/>
  </files>
 </download>

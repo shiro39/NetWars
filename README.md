@@ -1,3 +1,3 @@
 NetWars
 =========
-Level files
+Game files

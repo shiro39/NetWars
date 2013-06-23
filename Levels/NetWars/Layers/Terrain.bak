@@ -1,0 +1,194 @@
+<ObjectLayer>
+ <Layer Name="Terrain" GUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" FullName="Terrain" External="1" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" Expanded="0" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Group" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{CE021602-67B0-4EB9-AB17-8FEC08A2152C}" Name="Plane_Group_02" Pos="564.70691,392.04776,671.56982" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Opened="1">
+    <Objects>
+     <Object Type="Solid" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{0E677EC3-63FB-4AE6-9F85-7C6485BA9AEE}" Name="Plane_02" Parent="{CE021602-67B0-4EB9-AB17-8FEC08A2152C}" Pos="18.583252,-27.056824,0.41680908" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" Material="materials/templates/illum/basic_concrete_polished_template" MatLayersMask="0" RndFlags="8" ViewDistRatio="100" LMQuality="1">
+      <Brush ZeroTolerance="0">
+       <Face p1="-148.87976,165.7847,0.502388" p2="-148.87976,-58.46225,0.502388" p3="-148.87976,-58.46225,-0.502388" NumberOfPoints="4" v0="0" v1="1" v2="2" v3="3" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0">
+        <Vertex NumberOfVertices="24" p0="-148.87976,-58.46225,-0.502388" p1="-148.87976,-58.46225,0.502388" p2="-148.87976,165.7847,0.502388" p3="-148.87976,165.7847,-0.502388" p4="-148.87976,165.7847,-0.502388" p5="-148.87976,165.7847,0.502388" p6="74.240845,165.7847,0.502388" p7="74.240845,165.7847,-0.502388" p8="74.240845,165.7847,-0.502388" p9="74.240845,165.7847,0.502388" p10="74.240845,-58.46225,0.502388" p11="74.240845,-58.46225,-0.502388" p12="74.240845,-58.46225,-0.502388" p13="74.240845,-58.46225,0.502388" p14="-148.87976,-58.46225,0.502388" p15="-148.87976,-58.46225,-0.502388" p16="74.240845,165.7847,0.502388" p17="-148.87976,165.7847,0.502388" p18="-148.87976,-58.46225,0.502388" p19="74.240845,-58.46225,0.502388" p20="-148.87976,-58.46225,-0.502388" p21="-148.87976,165.7847,-0.502388" p22="74.240845,165.7847,-0.502388" p23="74.240845,-58.46225,-0.502388"/>
+       </Face>
+       <Face p1="74.240845,165.7847,0.502388" p2="-148.87976,165.7847,0.502388" p3="-148.87976,165.7847,-0.502388" NumberOfPoints="4" v0="4" v1="5" v2="6" v3="7" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="74.240845,-58.46225,0.502388" p2="74.240845,165.7847,0.502388" p3="74.240845,165.7847,-0.502388" NumberOfPoints="4" v0="8" v1="9" v2="10" v3="11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-148.87976,-58.46225,0.502388" p2="74.240845,-58.46225,0.502388" p3="74.240845,-58.46225,-0.502388" NumberOfPoints="4" v0="12" v1="13" v2="14" v3="15" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-148.87976,-58.46225,0.502388" p2="-148.87976,165.7847,0.502388" p3="74.240845,165.7847,0.502388" NumberOfPoints="4" v0="16" v1="17" v2="18" v3="19" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="74.240845,165.7847,-0.502388" p2="-148.87976,165.7847,-0.502388" p3="-148.87976,-58.46225,-0.502388" NumberOfPoints="4" v0="20" v1="21" v2="22" v3="23" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+      </Brush>
+     </Object>
+     <Object Type="GeomEntity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{DA33D980-42F2-45B3-8F21-92FC0FD1D7AC}" Name="GeomEntity_02" Parent="{CE021602-67B0-4EB9-AB17-8FEC08A2152C}" Pos="-18.583252,27.056824,-0.41677856" FloorNumber="-1" Rotate="-4.3711388e-008,1,0,-0" Scale="292.89395,292.89401,292.89401" ColorRGB="65535" Material="Levels/NetWars/Materials/glass_light" MatLayersMask="0" Geometry="levels/netwars/objects/plane_bottom.cgf" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="GeomEntity">
+      <Properties esFaction="">
+       <Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+       <Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+        <vOffset x="0" y="0" z="0"/>
+       </Interest>
+      </Properties>
+     </Object>
+    </Objects>
+   </Object>
+   <Object Type="Group" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{98FE512D-BF66-412A-8D33-4B92DAE8DFA9}" Name="Plane_Group_03" Pos="564.70691,1011.3298,360.16772" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Opened="0">
+    <Objects>
+     <Object Type="Solid" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{170714A3-FA3B-40E2-9F30-CFAC9571442D}" Name="Plane_03" Parent="{98FE512D-BF66-412A-8D33-4B92DAE8DFA9}" Pos="18.583252,-27.056824,0.41680908" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" Material="materials/templates/illum/basic_concrete_polished_template" MatLayersMask="0" RndFlags="8" ViewDistRatio="100" LMQuality="1">
+      <Brush ZeroTolerance="0">
+       <Face p1="-148.87976,165.7847,0.502388" p2="-148.87976,-58.46225,0.502388" p3="-148.87976,-58.46225,-0.502388" NumberOfPoints="4" v0="0" v1="1" v2="2" v3="3" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0">
+        <Vertex NumberOfVertices="24" p0="-148.87976,-58.46225,-0.502388" p1="-148.87976,-58.46225,0.502388" p2="-148.87976,165.7847,0.502388" p3="-148.87976,165.7847,-0.502388" p4="-148.87976,165.7847,-0.502388" p5="-148.87976,165.7847,0.502388" p6="74.240845,165.7847,0.502388" p7="74.240845,165.7847,-0.502388" p8="74.240845,165.7847,-0.502388" p9="74.240845,165.7847,0.502388" p10="74.240845,-58.46225,0.502388" p11="74.240845,-58.46225,-0.502388" p12="74.240845,-58.46225,-0.502388" p13="74.240845,-58.46225,0.502388" p14="-148.87976,-58.46225,0.502388" p15="-148.87976,-58.46225,-0.502388" p16="74.240845,165.7847,0.502388" p17="-148.87976,165.7847,0.502388" p18="-148.87976,-58.46225,0.502388" p19="74.240845,-58.46225,0.502388" p20="-148.87976,-58.46225,-0.502388" p21="-148.87976,165.7847,-0.502388" p22="74.240845,165.7847,-0.502388" p23="74.240845,-58.46225,-0.502388"/>
+       </Face>
+       <Face p1="74.240845,165.7847,0.502388" p2="-148.87976,165.7847,0.502388" p3="-148.87976,165.7847,-0.502388" NumberOfPoints="4" v0="4" v1="5" v2="6" v3="7" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="74.240845,-58.46225,0.502388" p2="74.240845,165.7847,0.502388" p3="74.240845,165.7847,-0.502388" NumberOfPoints="4" v0="8" v1="9" v2="10" v3="11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-148.87976,-58.46225,0.502388" p2="74.240845,-58.46225,0.502388" p3="74.240845,-58.46225,-0.502388" NumberOfPoints="4" v0="12" v1="13" v2="14" v3="15" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-148.87976,-58.46225,0.502388" p2="-148.87976,165.7847,0.502388" p3="74.240845,165.7847,0.502388" NumberOfPoints="4" v0="16" v1="17" v2="18" v3="19" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="74.240845,165.7847,-0.502388" p2="-148.87976,165.7847,-0.502388" p3="-148.87976,-58.46225,-0.502388" NumberOfPoints="4" v0="20" v1="21" v2="22" v3="23" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+      </Brush>
+     </Object>
+     <Object Type="GeomEntity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{D54A4CE1-FC88-42E4-85A8-6DC3D8D3615F}" Name="GeomEntity_03" Parent="{98FE512D-BF66-412A-8D33-4B92DAE8DFA9}" Pos="-18.583252,27.056824,-0.41677856" FloorNumber="-1" Rotate="-4.3711388e-008,1,0,-0" Scale="292.89395,292.89401,292.89401" ColorRGB="65535" Material="Levels/NetWars/Materials/glass_light" MatLayersMask="0" Geometry="levels/netwars/objects/plane_bottom.cgf" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="GeomEntity">
+      <Properties esFaction="">
+       <Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+       <Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+        <vOffset x="0" y="0" z="0"/>
+       </Interest>
+      </Properties>
+     </Object>
+    </Objects>
+   </Object>
+   <Object Type="Shape" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{D4725A71-830E-453C-A475-D56420A23EA7}" Name="Shape_05" Pos="845.98071,881.38055,105.59946" FloorNumber="-1" Rotate="1,0,0,0" Scale="1.9844,1.9844,1.9844" ColorRGB="16763904" Width="0" Height="10" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="1.8" Agent_width="0.5" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="173.2262,-10.290527,0"/>
+     <Point Pos="173.36548,-184.0047,0"/>
+     <Point Pos="-8.4164429,-166.26953,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{61127D94-293F-4739-B9F0-435B42285EFA}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Shape" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{B42F7D79-624A-47D2-8FED-40B5B7C97C1F}" Name="Shape_07" Pos="412.47018,560.78345,644.11078" FloorNumber="-1" Rotate="1,0,0,0" Scale="1.605,1.605,1.605" ColorRGB="16763904" Width="0" Height="10" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="1.8" Agent_width="0.5" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="173.2262,-10.290527,0"/>
+     <Point Pos="173.36548,-184.0047,0"/>
+     <Point Pos="-8.4164429,-166.26953,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{61127D94-293F-4739-B9F0-435B42285EFA}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Entity" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{61127D94-293F-4739-B9F0-435B42285EFA}" Name="AreaTrigger_01" Pos="1074.2057,1122.892,197.74202" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="AreaTrigger">
+    <Properties bEnabled="1" esFactionFilter="" bInVehicleOnly="0" bOnlyLocalPlayer="0" bOnlyPlayers="1" PlaySequence="" ScriptCommand="" bTriggerOnce="0">
+     <MultiplayerOptions bLocalOnly="0" bPerPlayer="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="FalloffTrigger" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Start" pos="-200,0,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="3" Class="entity:AreaTrigger" pos="-10,-20,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="4" Class="Game:LocalPlayer" pos="-120,-170,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="5" Class="Game:DamageActor" pos="150,-120,0" flags="0">
+       <Inputs entityId="0" damage="100" Position="0,0,0"/>
+      </Node>
+      <Node Id="7" Class="entity:SpawnPoint" pos="220,-10,0" flags="0" EntityGUID="{1C892800-556A-491E-B688-09FF52EA2940}" EntityGUID_64="491E556A1C892800">
+       <Inputs entityId="0" Disable="0" Enable="0" Spawn="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="3" nodeOut="1" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="3" portIn="Trigger" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="3" portIn="Enable" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="3" portIn="Spawn" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="4" portIn="entityId" portOut="entityId" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Shape" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{8174A2A7-1375-433D-8F82-4F481FA11A8D}" Name="Shape_06" Pos="1099.7395,1683.9686,499.10406" FloorNumber="-1" Rotate="1,0,0,0" Scale="1.7908,1.7908,1.7908" ColorRGB="16763904" Width="0" Height="10" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="1.8" Agent_width="0.5" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="173.2262,-10.290527,0"/>
+     <Point Pos="173.36548,-184.0047,0"/>
+     <Point Pos="-8.4164429,-166.26953,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{61127D94-293F-4739-B9F0-435B42285EFA}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Group" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{F82536C6-4669-42A6-858C-A1E63108505F}" Name="Plane_Group_04" Pos="1266.3195,1488.714,528.24597" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Opened="0">
+    <Objects>
+     <Object Type="Solid" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{C3C8C110-5485-49EA-B2E5-6C0AC37CA7D5}" Name="Plane_04" Parent="{F82536C6-4669-42A6-858C-A1E63108505F}" Pos="18.583252,-27.056824,0.41680908" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" Material="materials/templates/illum/basic_concrete_polished_template" MatLayersMask="0" RndFlags="8" ViewDistRatio="100" LMQuality="1">
+      <Brush ZeroTolerance="0">
+       <Face p1="-148.87976,165.7847,0.502388" p2="-148.87976,-58.46225,0.502388" p3="-148.87976,-58.46225,-0.502388" NumberOfPoints="4" v0="0" v1="1" v2="2" v3="3" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0">
+        <Vertex NumberOfVertices="24" p0="-148.87976,-58.46225,-0.502388" p1="-148.87976,-58.46225,0.502388" p2="-148.87976,165.7847,0.502388" p3="-148.87976,165.7847,-0.502388" p4="-148.87976,165.7847,-0.502388" p5="-148.87976,165.7847,0.502388" p6="74.240845,165.7847,0.502388" p7="74.240845,165.7847,-0.502388" p8="74.240845,165.7847,-0.502388" p9="74.240845,165.7847,0.502388" p10="74.240845,-58.46225,0.502388" p11="74.240845,-58.46225,-0.502388" p12="74.240845,-58.46225,-0.502388" p13="74.240845,-58.46225,0.502388" p14="-148.87976,-58.46225,0.502388" p15="-148.87976,-58.46225,-0.502388" p16="74.240845,165.7847,0.502388" p17="-148.87976,165.7847,0.502388" p18="-148.87976,-58.46225,0.502388" p19="74.240845,-58.46225,0.502388" p20="-148.87976,-58.46225,-0.502388" p21="-148.87976,165.7847,-0.502388" p22="74.240845,165.7847,-0.502388" p23="74.240845,-58.46225,-0.502388"/>
+       </Face>
+       <Face p1="74.240845,165.7847,0.502388" p2="-148.87976,165.7847,0.502388" p3="-148.87976,165.7847,-0.502388" NumberOfPoints="4" v0="4" v1="5" v2="6" v3="7" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="74.240845,-58.46225,0.502388" p2="74.240845,165.7847,0.502388" p3="74.240845,165.7847,-0.502388" NumberOfPoints="4" v0="8" v1="9" v2="10" v3="11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-148.87976,-58.46225,0.502388" p2="74.240845,-58.46225,0.502388" p3="74.240845,-58.46225,-0.502388" NumberOfPoints="4" v0="12" v1="13" v2="14" v3="15" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-148.87976,-58.46225,0.502388" p2="-148.87976,165.7847,0.502388" p3="74.240845,165.7847,0.502388" NumberOfPoints="4" v0="16" v1="17" v2="18" v3="19" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="74.240845,165.7847,-0.502388" p2="-148.87976,165.7847,-0.502388" p3="-148.87976,-58.46225,-0.502388" NumberOfPoints="4" v0="20" v1="21" v2="22" v3="23" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+      </Brush>
+     </Object>
+     <Object Type="GeomEntity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{218490B3-CEA1-42F1-B878-8F0532636FDC}" Name="GeomEntity_04" Parent="{F82536C6-4669-42A6-858C-A1E63108505F}" Pos="-18.583252,27.056824,-0.41677856" FloorNumber="-1" Rotate="-4.3711388e-008,1,0,-0" Scale="292.89395,292.89401,292.89401" ColorRGB="65535" Material="Levels/NetWars/Materials/glass_light" MatLayersMask="0" Geometry="levels/netwars/objects/plane_bottom.cgf" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="GeomEntity">
+      <Properties esFaction="">
+       <Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+       <Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+        <vOffset x="0" y="0" z="0"/>
+       </Interest>
+      </Properties>
+     </Object>
+    </Objects>
+   </Object>
+   <Object Type="Shape" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{E2B4A5D6-3B42-4176-9949-2759E2EAB2EE}" Name="Shape_01" Pos="87.504761,2094.9731,0.099999994" FloorNumber="-1" Rotate="1,0,0,0" Scale="1.692,1.692,1.692" ColorRGB="16763904" Width="0" Height="10" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="1.8" Agent_width="0.5" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="917.49121,-128.09351,0"/>
+     <Point Pos="899.80554,-1286.6532,7.2147697e-005"/>
+     <Point Pos="-18.792023,-1246.9708,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{61127D94-293F-4739-B9F0-435B42285EFA}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Shape" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{C6701EF0-9D0D-46AB-8561-BBDE6C146B5C}" Name="Shape_03" Pos="365.38507,1185.9497,337.90799" FloorNumber="-1" Rotate="1,0,0,0" Scale="1.6422001,1.6422001,1.6422001" ColorRGB="16763904" Width="0" Height="10" AreaId="0" GroupId="0" Priority="0" Closed="1" DisplayFilled="1" DisplaySoundInfo="0" Agent_height="1.8" Agent_width="0.5" Render_voxel_grid="0" voxel_offset_x="0" voxel_offset_y="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="215.52679,-1.7619629,0"/>
+     <Point Pos="193.08856,-187.70923,0"/>
+     <Point Pos="1.590271,-171.68762,0"/>
+    </Points>
+    <Entities>
+     <Entity Id="{61127D94-293F-4739-B9F0-435B42285EFA}"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Group" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{F35315FD-5F72-450E-9D1E-3842E460EDF8}" Name="Plane_Group_01" Pos="1031.8779,690.23883,126.38216" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Opened="0">
+    <Objects>
+     <Object Type="Solid" Layer="Terrain" LayerGUID="{8BA36EE4-958F-4745-8EE3-1F14B467F5B9}" Id="{306EC231-A429-460F-A9F1-768FF8B55AC6}" Name="Plane_01" Parent="{F35315FD-5F72-450E-9D1E-3842E460EDF8}" Pos="18.583252,-27.056824,0.41680908" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" Material="materials/templates/illum/basic_concrete_polished_template" MatLayersMask="0" RndFlags="8" ViewDistRatio="100" LMQuality="1">
+      <Brush ZeroTolerance="0">
+       <Face p1="-148.87976,165.7847,0.502388" p2="-148.87976,-58.46225,0.502388" p3="-148.87976,-58.46225,-0.502388" NumberOfPoints="4" v0="0" v1="1" v2="2" v3="3" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0">
+        <Vertex NumberOfVertices="24" p0="-148.87976,-58.46225,-0.502388" p1="-148.87976,-58.46225,0.502388" p2="-148.87976,165.7847,0.502388" p3="-148.87976,165.7847,-0.502388" p4="-148.87976,165.7847,-0.502388" p5="-148.87976,165.7847,0.502388" p6="74.240845,165.7847,0.502388" p7="74.240845,165.7847,-0.502388" p8="74.240845,165.7847,-0.502388" p9="74.240845,165.7847,0.502388" p10="74.240845,-58.46225,0.502388" p11="74.240845,-58.46225,-0.502388" p12="74.240845,-58.46225,-0.502388" p13="74.240845,-58.46225,0.502388" p14="-148.87976,-58.46225,0.502388" p15="-148.87976,-58.46225,-0.502388" p16="74.240845,165.7847,0.502388" p17="-148.87976,165.7847,0.502388" p18="-148.87976,-58.46225,0.502388" p19="74.240845,-58.46225,0.502388" p20="-148.87976,-58.46225,-0.502388" p21="-148.87976,165.7847,-0.502388" p22="74.240845,165.7847,-0.502388" p23="74.240845,-58.46225,-0.502388"/>
+       </Face>
+       <Face p1="74.240845,165.7847,0.502388" p2="-148.87976,165.7847,0.502388" p3="-148.87976,165.7847,-0.502388" NumberOfPoints="4" v0="4" v1="5" v2="6" v3="7" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="74.240845,-58.46225,0.502388" p2="74.240845,165.7847,0.502388" p3="74.240845,165.7847,-0.502388" NumberOfPoints="4" v0="8" v1="9" v2="10" v3="11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-148.87976,-58.46225,0.502388" p2="74.240845,-58.46225,0.502388" p3="74.240845,-58.46225,-0.502388" NumberOfPoints="4" v0="12" v1="13" v2="14" v3="15" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-148.87976,-58.46225,0.502388" p2="-148.87976,165.7847,0.502388" p3="74.240845,165.7847,0.502388" NumberOfPoints="4" v0="16" v1="17" v2="18" v3="19" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="74.240845,165.7847,-0.502388" p2="-148.87976,165.7847,-0.502388" p3="-148.87976,-58.46225,-0.502388" NumberOfPoints="4" v0="20" v1="21" v2="22" v3="23" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+      </Brush>
+     </Object>
+     <Object Type="GeomEntity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{7AFD1C04-857E-4BA8-A0F4-24530EF1B83F}" Name="GeomEntity_05" Parent="{F35315FD-5F72-450E-9D1E-3842E460EDF8}" Pos="-18.583252,27.056824,-0.41677856" FloorNumber="-1" Rotate="-4.3711388e-008,1,0,-0" Scale="292.89395,292.89401,292.89401" ColorRGB="65535" Material="Levels/NetWars/Materials/glass_light" MatLayersMask="0" Geometry="levels/netwars/objects/plane_bottom.cgf" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="GeomEntity">
+      <Properties esFaction="">
+       <Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+       <Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+        <vOffset x="0" y="0" z="0"/>
+       </Interest>
+      </Properties>
+     </Object>
+    </Objects>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>
