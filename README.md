@@ -1,3 +1,0 @@
-NetWars
-=========
-C++ code
