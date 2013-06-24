@@ -1,5 +1,10 @@
 Levels/Singleplayer/*
 Levels/test/*
+CryENGINE_FreeSDK_v3_3_5_Sample_Assets/*
+Entities/*
+Objects/*
+ScreenShots/*
+Scripts/*
 Animations.pak
 GameData.pak
 Music.pak
@@ -7,3 +12,4 @@ Objects.pak
 Scripts.pak
 Sounds.pak
 Textures.pak
+_NewPreview_.mtl

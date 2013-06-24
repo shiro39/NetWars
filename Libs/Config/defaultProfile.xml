@@ -148,7 +148,7 @@
 		<action name="use" onPress="1" onRelease="1" keyboard="f"/>
 		<action name="xi_use" onPress="1" onRelease="1" xboxpad="xi_y" ps3pad="pad_triangle" wiipad="wii_pad_x"/>
 		<action name="attack1" onPress="1" onRelease="1" onHold="1" keyboard="mouse1" xboxpad="xi_triggerr_btn" ps3pad="pad_r2" wiipad="wii_pad_r2"/>
-		<action name="zoom" onPress="1" onRelease="1" keyboard="mouse2"/>
+		<!-- <action name="zoom" onPress="1" onRelease="1" keyboard="mouse2"/> -->
 		<action name="xi_zoom" onPress="1" onRelease="1" onHold="1" xboxpad="xi_triggerl_btn" ps3pad="pad_l2" wiipad="wii_pad_l2"/>
 		<action name="firemode" onPress="1" keyboard="x" xboxpad="xi_dpad_down" ps3pad="pad_down" wiipad="wii_pad_down"/>
 		<action name="cycle_spectator_mode" onPress="1" keyboard="space"/>
@@ -164,8 +164,8 @@
 		<action name="prone" onPress="1" onHold="1" keyboard="z"/>
 		<action name="sprint" onPress="1" onRelease="1" retriggerable="1" keyboard="lshift" xboxpad="xi_thumbl" ps3pad="pad_l3" wiipad="wii_pad_l3"/>
 		<action name="special" onPress="1" onRelease="1" keyboard="t" xboxpad="xi_thumbr" wiipad="wii_pad_r3"/>
-		<action name="leanleft" onPress="1" onRelease="1" onHold="1" keyboard="q"/>
-		<action name="leanright" onPress="1" onRelease="1" onHold="1" keyboard="e"/>
+		<!-- <action name="leanleft" onPress="1" onRelease="1" onHold="1" keyboard="q"/>
+		<action name="leanright" onPress="1" onRelease="1" onHold="1" keyboard="e"/> -->
 		<action name="reload" onPress="1" keyboard="r" xboxpad="xi_x" ps3pad="pad_square" wiipad="wii_pad_y"/>
 		<action name="drop" onPress="1" onRelease="1" keyboard="j"/>
 		<action name="nextitem" onPress="1" keyboard="mwheel_up" xboxpad="xi_dpad_right" ps3pad="pad_right" wiipad="wii_pad_right"/>
