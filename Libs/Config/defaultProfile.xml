@@ -15,10 +15,11 @@
 		<action name="togglepdrawhelpers" onPress="1" noModifiers="1" keyboard="f10" />
 		<action name="ulammo" onPress="1" noModifiers="1" keyboard="np_2" />
 		<action name="debug" onPress="1" keyboard="7" />
-		<action name="thirdperson" onPress="1" noModifiers="1" keyboard="f1" xboxpad="xi_dpad_up" ps3pad="pad_up" wiipad="wii_pad_up"/>
+		
 		<action name="debug_next_actor" onPress="1" noModifiers="1" keyboard="backspace"/>
 	-->
 		<!-- debug keys - end -->
+		<action name="thirdperson" onPress="1" noModifiers="1" keyboard="f1" xboxpad="xi_dpad_up" ps3pad="pad_up" wiipad="wii_pad_up"/>
 	</actionmap>
 
 	<actionmap name="multiplayer" version="22">

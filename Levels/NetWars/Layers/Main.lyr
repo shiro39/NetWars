@@ -1,8 +1,130 @@
 <ObjectLayer>
  <Layer Name="Main" GUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" FullName="Main" External="1" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" Expanded="1" IsDefaultColor="1">
   <LayerObjects>
-   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{1C892800-556A-491E-B688-09FF52EA2940}" Name="SpawnPoint_01" Pos="439.31198,525.01062,673.2323" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="SpawnPoint">
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{1C892800-556A-491E-B688-09FF52EA2940}" Name="SpawnPoint_01" Pos="445.99997,521.99994,672.99994" FloorNumber="-1" Rotate="0.13917308,0,0,0.99026811" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="SpawnPoint">
     <Properties bEnabled="1" teamName=""/>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{00F50B16-3954-4887-B612-E60D2A408C56}" Name="MapTutorialWaypoint_01" Pos="456,469,673" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="MapTutorialWaypoint">
+    <Properties fileModel="objects/default.cgf" sWaypointName="Target"/>
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:MapTutorialWaypoint" pos="-170,-100,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Activate="0" WayPointName=""/>
+      </Node>
+      <Node Id="3" Class="HUD:DisplayDebugMessage" pos="60,-150,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="4" Class="HUD:DisplayDebugMessage" pos="50,20,0" flags="0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="100" fontSize="2" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="5" Class="Start" pos="-140,-150,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="3" nodeOut="2" portIn="message" portOut="PosX" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="2" portIn="message" portOut="PosY" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="5" portIn="Show" portOut="output" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="5" portIn="Show" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{0E7F5120-DF8F-4D98-B682-018A3569B87C}" Name="TagPoint_02" Pos="456,469,673" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{0865D822-D992-477E-90FD-CF173B55642A}" Name="ScreenTest" Pos="447,520,673" FloorNumber="-1" Rotate="1,0,0,0" Scale="1.02,1.02,1.02" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="mapscreen">
+    <Properties bAutoPickup="0" HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
+     <Respawn bRespawn="0" nTimer="30" bUnique="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Start" pos="-170,-20,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="3" Class="entity:ProximityTrigger" pos="0,-160,0" flags="0" EntityGUID="{782DEE69-0EE9-4C68-B477-43F53E836660}" EntityGUID_64="4C680EE9782DEE69">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="5" Class="entity:ProximityTrigger" pos="20,150,0" flags="0" EntityGUID="{6295CECD-1F94-4C0E-998E-5237B39F88AF}" EntityGUID_64="4C0E1F946295CECD">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="6" Class="String:SetString" pos="180,-10,0" flags="0">
+       <Inputs In="SHACK"/>
+      </Node>
+      <Node Id="7" Class="Logic:Any" pos="400,50,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="8" Class="String:SetString" pos="170,60,0" flags="0">
+       <Inputs In="GENERATOR ROOM"/>
+      </Node>
+      <Node Id="10" Class="entity:MapTutorialWaypoint" pos="530,60,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Activate="0" WayPointName=""/>
+      </Node>
+      <Node Id="13" Class="Entity:BeamEntity" pos="480,-220,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0" Memo=""/>
+      </Node>
+      <Node Id="17" Class="Entity:GetPos" pos="340,-120,0" flags="0" EntityGUID="{0E7F5120-DF8F-4D98-B682-018A3569B87C}" EntityGUID_64="4D98DF8F0E7F5120">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="18" Class="Logic:Any" pos="260,140,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="19" Class="Math:ToBoolean" pos="400,170,0" flags="0">
+       <Inputs />
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="3" nodeOut="1" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="1" portIn="Disable" portOut="output" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="1" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="1" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="1" portIn="in1" portOut="output" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="3" portIn="Enable" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="3" portIn="Set" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="3" portIn="Beam" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="19" nodeOut="5" portIn="false" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="6" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="7" portIn="WayPointName" portOut="out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="8" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="17" portIn="Position" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="19" nodeOut="18" portIn="true" portOut="out" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="19" portIn="Activate" portOut="out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{B2543F2C-19EE-4F4B-8FF6-0E2848808ED9}" Name="MapTutorial_02" Pos="442,516,673" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="MapTutorial">
+    <Properties sMapFilePath=""/>
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:MapTutorial" pos="60,-50,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" MapImageFilePath=""/>
+      </Node>
+      <Node Id="3" Class="Start" pos="-310,-70,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="4" Class="String:SetString" pos="-270,-10,0" flags="0">
+       <Inputs In="Game/levels/NetWars/grid.dds"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="4" nodeOut="3" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="2" nodeOut="4" portIn="MapImageFilePath" portOut="Out" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{71A6FE3D-36D6-41FA-B854-8FCA31F0AC87}" Name="Teleporter_02" Pos="1060.9999,-383.99994,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Teleporter"/>
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{782DEE69-0EE9-4C68-B477-43F53E836660}" Name="ProximityTrigger_01" Pos="447,514,673" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="5" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bLocalOnly="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{66D9CB70-BC26-4068-B06A-30C2D489315D}" Name="MapTutorial_01" Pos="520,0,544" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="MapTutorial">
+    <Properties sMapFilePath=""/>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{6295CECD-1F94-4C0E-998E-5237B39F88AF}" Name="ProximityTrigger_02" Pos="456,469,673" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="5" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bLocalOnly="0" bPerPlayer="0"/>
+    </Properties>
    </Object>
   </LayerObjects>
  </Layer>

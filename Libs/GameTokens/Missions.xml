@@ -1,0 +1,3 @@
+<GameTokensLibrary Name="Missions">
+ <GameToken Name="Mission 1.go to see me" Type="Bool" Value="false" LocalOnly="1"/>
+</GameTokensLibrary>
