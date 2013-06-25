@@ -1,0 +1,24 @@
+<item name="mapscreen" class="Weapon" category="utility" priority="12">
+	
+	<params>
+		<param name="giveable" 		value="1" />
+		<param name="selectable" 	value="1" />
+		<param name="pose" 			value="melee" />	
+		<param name="ui_weapon" 	value="1" />
+	</params>
+	
+
+	<geometry>
+		<firstperson name="Objects/Weapons/MapScreen/mapscreen_fp.cdf"/>
+		<thirdperson name="Objects/Weapons/MapScreen/mapscreen_fp.cdf"/>
+	</geometry>
+	
+						
+	<actions>
+		<action name="idle">
+			<animation target="firstperson" name="idle_%hand%_%suffix%01" speed="0.7"/>
+			<animation target="owner" name="idle" />
+		</action>
+	</actions>
+
+</item>

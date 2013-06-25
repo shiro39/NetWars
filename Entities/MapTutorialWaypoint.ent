@@ -1,0 +1,4 @@
+<Entity
+Name="MapTutorialWaypoint"
+Script="Scripts/Entities/MapTutorial/MapTutorialWaypoint.lua"
+/>

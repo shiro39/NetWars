@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<Params>
+	<AnimationList>
+		<Animation name="#filepath" path="Animations\1st_person\mapscreen_fp\"/>
+		<Animation name="$TracksDatabase" path="Animations\1st_person\mapscreen_fp\mapscreen_fp.dba"/>
+
+
+		<Animation name="idle_right_01" path="idle_right_01.caf"/>
+		
+	</AnimationList>
+</Params>

@@ -1,0 +1,20 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="MapScreenBody" MtlFlags="524448" Shader="Illum" GenMask="90000" StringGenMask="%ENVIRONMENT_MAP%GLOSS_MAP" SurfaceType="" MatTemplate="" Diffuse="0.23099814,0.23099814,0.23099814" Specular="0.69772971,0.87362552,1.0348028" Emissive="0.82772583,0.82772583,0.82772583" Shininess="40" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/mapscreen/textures/portablemap_diff.tif" Filter="5"/>
+    <Texture Map="Specular" File="objects/weapons/mapscreen/textures/portablemap_diff.tif" Filter="5"/>
+    <Texture Map="Bumpmap" File="objects/weapons/mapscreen/textures/portablemap_ddn.tif" Filter="5"/>
+    <Texture Map="Environment" File="objects/weapons/scar/ny_cubemap.tif" Filter="5"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="0.28999999" FresnelBias="0.40000001" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="MapScreen" MtlFlags="524416" Shader="Illum" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.0060405931,0.0060405931,0.0060405931" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" GlowAmount="1">
+   <Textures>
+    <Texture Map="Diffuse" File="libs/ui/tutorialmap.swf" TexType="5"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>
