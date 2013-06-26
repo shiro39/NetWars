@@ -9,7 +9,7 @@
    </Textures>
    <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="0.28999999" FresnelBias="0.40000001" IndirectColor="0.25,0.25,0.25"/>
   </Material>
-  <Material Name="MapScreen" MtlFlags="524416" Shader="Illum" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.0060405931,0.0060405931,0.0060405931" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" GlowAmount="1">
+  <Material Name="MapScreen" MtlFlags="524416" Shader="Illum" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" GlowAmount="1">
    <Textures>
     <Texture Map="Diffuse" File="libs/ui/tutorialmap.swf" TexType="5"/>
    </Textures>

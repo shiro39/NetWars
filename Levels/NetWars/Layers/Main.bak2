@@ -1,31 +1,85 @@
 <ObjectLayer>
  <Layer Name="Main" GUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" FullName="Main" External="1" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" Expanded="1" IsDefaultColor="1">
   <LayerObjects>
-   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{1C892800-556A-491E-B688-09FF52EA2940}" Name="SpawnPoint_01" Pos="439.31198,525.01062,673.2323" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="SpawnPoint">
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{1C892800-556A-491E-B688-09FF52EA2940}" Name="SpawnPoint_01" Pos="445.99997,521.99994,672.99994" FloorNumber="-1" Rotate="0.13917308,0,0,0.99026811" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="SpawnPoint">
     <Properties bEnabled="1" teamName=""/>
    </Object>
    <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{00F50B16-3954-4887-B612-E60D2A408C56}" Name="MapTutorialWaypoint_01" Pos="456,469,673" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="MapTutorialWaypoint">
     <Properties fileModel="objects/default.cgf" sWaypointName="Target"/>
     <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
-      <Node Id="2" Class="entity:MapTutorialWaypoint" pos="-170,-100,0" flags="0" GraphEntity="0">
+      <Node Id="2" Class="entity:MapTutorialWaypoint" pos="-590,0,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Activate="0" WayPointName=""/>
       </Node>
-      <Node Id="3" Class="HUD:DisplayDebugMessage" pos="60,-150,0" flags="0">
+      <Node Id="6" Class="HUD:DisplayDebugMessage" pos="210,-200,0" flags="0">
        <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
       </Node>
-      <Node Id="4" Class="HUD:DisplayDebugMessage" pos="50,20,0" flags="0">
+      <Node Id="7" Class="HUD:DisplayDebugMessage" pos="40,140,0" flags="0">
        <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="100" fontSize="2" clr_Color="1,1,1" centered="0"/>
       </Node>
-      <Node Id="5" Class="Start" pos="-140,-150,0" flags="0">
+      <Node Id="8" Class="Minimap:MapInfo" pos="-120,70,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="9" Class="Start" pos="-270,40,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="10" Class="String:Concat" pos="30,-170,0" flags="0">
+       <Inputs String1="" String2=","/>
+      </Node>
+      <Node Id="11" Class="String:Concat" pos="90,-90,0" flags="0">
+       <Inputs String1="" String2=""/>
+      </Node>
+      <Node Id="12" Class="String:Concat" pos="20,10,0" flags="0">
+       <Inputs String1="" String2=","/>
+      </Node>
+      <Node Id="13" Class="String:Concat" pos="170,40,0" flags="0">
+       <Inputs String1="" String2=""/>
+      </Node>
+      <Node Id="14" Class="Time:Timer" pos="-300,-200,0" flags="0">
+       <Inputs period="0.5" min="0" max="0" paused="0"/>
+      </Node>
+      <Node Id="15" Class="Minimap:EntityPos" pos="-310,-70,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="16" Class="UI:Functions:UIEntityTagsDynTex:AddEntityTag" pos="-313.07776,255.27879,0" flags="0">
+       <Inputs EntityID="0" uiElements_UIElement="EntityFlashTag" EntityClass="EntityFlashTag" Material="Materials/gfx/EntityFlashTag" Offset="0,0,0" TagIDX=""/>
+      </Node>
+      <Node Id="18" Class="UI:Variable:Var" pos="-330,400,0" flags="0">
+       <Inputs uiVariables_Variable="EntityFlashTag:PlayerName" instanceID="-1"/>
+      </Node>
+      <Node Id="19" Class="UI:Functions:HUD3D:AddMpMessage" pos="-330,510,0" flags="0">
+       <Inputs instanceID="-1" MsgType="join" Str1="" Str2=""/>
+      </Node>
+      <Node Id="20" Class="Entity:EntityInfo" pos="-480,380,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="21" Class="Start" pos="-610,340,0" flags="0">
        <Inputs InGame="1" InEditor="1"/>
       </Node>
      </Nodes>
      <Edges>
-      <Edge nodeIn="3" nodeOut="2" portIn="message" portOut="PosX" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="2" portIn="message" portOut="PosY" enabled="1"/>
-      <Edge nodeIn="3" nodeOut="5" portIn="Show" portOut="output" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="5" portIn="Show" portOut="output" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="8" portIn="String1" portOut="Width" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="8" portIn="String2" portOut="Height" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="9" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="11" nodeOut="10" portIn="String1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="11" portIn="message" portOut="Out" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="12" portIn="String1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="13" portIn="message" portOut="Out" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="14" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="14" portIn="Show" portOut="out" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="14" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="11" nodeOut="14" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="14" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="13" nodeOut="14" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="15" nodeOut="14" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="10" nodeOut="15" portIn="String1" portOut="PosX" enabled="1"/>
+      <Edge nodeIn="11" nodeOut="15" portIn="String2" portOut="PosY" enabled="1"/>
+      <Edge nodeIn="16" nodeOut="20" portIn="EntityID" portOut="Id" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="20" portIn="Set" portOut="Id" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="20" portIn="instanceID" portOut="Id" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="20" portIn="Value" portOut="Name" enabled="1"/>
+      <Edge nodeIn="19" nodeOut="20" portIn="Str1" portOut="Name" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="21" portIn="Get" portOut="output" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>
@@ -91,6 +145,11 @@
      <GraphTokens />
     </FlowGraph>
    </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{500DE326-A929-474C-8D5C-F338C4989020}" Name="ProximityTrigger_01" Pos="560.99994,449.99994,671.99994" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="1" DimX="5" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ScriptCommand="" bTriggerOnce="0" UsableMessage="Press F Key To Talk">
+     <MultiplayerOptions bLocalOnly="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
    <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{B2543F2C-19EE-4F4B-8FF6-0E2848808ED9}" Name="MapTutorial_02" Pos="442,516,673" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="MapTutorial">
     <Properties sMapFilePath=""/>
     <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
@@ -102,7 +161,7 @@
        <Inputs InGame="1" InEditor="1"/>
       </Node>
       <Node Id="4" Class="String:SetString" pos="-270,-10,0" flags="0">
-       <Inputs In="Game/levels/NetWars/grid.dds"/>
+       <Inputs In="Game/levels/NetWars/netwars.dds"/>
       </Node>
      </Nodes>
      <Edges>
@@ -113,7 +172,19 @@
     </FlowGraph>
    </Object>
    <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{71A6FE3D-36D6-41FA-B854-8FCA31F0AC87}" Name="Teleporter_02" Pos="1060.9999,-383.99994,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Teleporter"/>
-   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{782DEE69-0EE9-4C68-B477-43F53E836660}" Name="ProximityTrigger_01" Pos="447,517,673" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ProximityTrigger">
+   <Object Type="Solid" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{5B446059-92D3-4C13-8790-D8D67841C859}" Name="Solid_01" Pos="531.49994,465.49994,686.49994" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" Material="materials/brick/brick_plaster_01" MatLayersMask="0" RndFlags="8" ViewDistRatio="100" LMQuality="1">
+    <Brush ZeroTolerance="0">
+     <Face p1="-21.499969,41.5,14.5" p2="-21.499969,-41.5,14.5" p3="-21.499969,-41.5,-14.5" NumberOfPoints="4" v0="0" v1="1" v2="2" v3="3" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0">
+      <Vertex NumberOfVertices="24" p0="-21.499969,-41.5,-14.5" p1="-21.499969,-41.5,14.5" p2="-21.499969,41.5,14.5" p3="-21.499969,41.5,-14.5" p4="-21.499969,41.5,-14.5" p5="-21.499969,41.5,14.5" p6="21.5,41.5,14.5" p7="21.5,41.5,-14.5" p8="21.5,41.5,-14.5" p9="21.5,41.5,14.5" p10="21.5,-41.5,14.5" p11="21.5,-41.5,-14.5" p12="21.5,-41.5,-14.5" p13="21.5,-41.5,14.5" p14="-21.499969,-41.5,14.5" p15="-21.499969,-41.5,-14.5" p16="21.5,41.5,14.5" p17="-21.499969,41.5,14.5" p18="-21.499969,-41.5,14.5" p19="21.5,-41.5,14.5" p20="-21.499969,-41.5,-14.5" p21="-21.499969,41.5,-14.5" p22="21.5,41.5,-14.5" p23="21.5,-41.5,-14.5"/>
+     </Face>
+     <Face p1="21.5,41.5,14.5" p2="-21.499969,41.5,14.5" p3="-21.499969,41.5,-14.5" NumberOfPoints="4" v0="4" v1="5" v2="6" v3="7" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="21.5,-41.5,14.5" p2="21.5,41.5,14.5" p3="21.5,41.5,-14.5" NumberOfPoints="4" v0="8" v1="9" v2="10" v3="11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="-21.499969,-41.5,14.5" p2="21.5,-41.5,14.5" p3="21.5,-41.5,-14.5" NumberOfPoints="4" v0="12" v1="13" v2="14" v3="15" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="-21.499969,-41.5,14.5" p2="-21.499969,41.5,14.5" p3="21.5,41.5,14.5" NumberOfPoints="4" v0="16" v1="17" v2="18" v3="19" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="21.5,41.5,-14.5" p2="-21.499969,41.5,-14.5" p3="-21.499969,-41.5,-14.5" NumberOfPoints="4" v0="20" v1="21" v2="22" v3="23" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+    </Brush>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{782DEE69-0EE9-4C68-B477-43F53E836660}" Name="ProximityTrigger_01" Pos="447,514,673" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="5" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
      <MultiplayerOptions bLocalOnly="0" bPerPlayer="0"/>
     </Properties>
@@ -125,6 +196,156 @@
     <Properties bActivateWithUseButton="0" DimX="5" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
      <MultiplayerOptions bLocalOnly="0" bPerPlayer="0"/>
     </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{746623E3-83E2-4983-A70A-436AB1996E2A}" Name="Grunt_01" Pos="560.99994,449.99994,672.99994" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Grunt">
+    <Properties AnimPack="" awarenessOfPlayer="0" esBehaviorSelectionTree="Cover2ST" bCannotSwim="0" aicharacter_character="" eiColliderMode="0" esCommConfig="" commrange="30" distanceToHideFrom="3" equip_EquipmentPack="AI" esFaction="Players" bFactionHostility="1" objFrozenModel="" bGrenades="0" fGroupHostility="0" fileHitDeathReactionsParamsDataFile="Libs/HitDeathReactionsData/HitDeathReactions_Grunt.xml" IdleSequence="None" bIdleStartOnSpawn="0" bInvulnerable="0" fileModel="Objects/Characters/sdk_player/sdk_player.cdf" nModelVariations="0" bNanoSuit="0" esNavigationType="MediumSizedCharacters" physicMassMult="1" preferredCombatDistance="20" ragdollPersistence="0" rank="4" reaction="1" soclasses_SmartObjectClass="Actor" SoundPack="" SoundPackAlternative="" SpawnedEntityName="" bSquadMate="0" bSquadMateIncendiary="0" bTrackable="1" bUsable="0" UseText="" esVoice="" nVoiceID="0" voiceType="enemy">
+     <CharacterSounds foleyEffect="foley_grunt" footstepEffect="footstep_grunt" bFootstepGearEffect="1" footstepIndGearAudioSignal_Run="" footstepIndGearAudioSignal_Walk="" remoteFootstepEffect="footstep_grunt"/>
+     <Damage FallPercentage="20" FallSleepTime="2" health="250" bLogDamages="0" bNoDeath="0" bNoGrab="0"/>
+     <Interest Angle="270" bInterested="1" MinInterestLevel="0"/>
+     <Perception audioScale="1" camoScale="1" collisionReactionScale="1" config="Human" FOVPrimary="80" FOVSecondary="160" heatScale="1" bIsAffectedByLight="0" minAlarmLevel="0" persistence="0" sightrange="70" sightrangeVehicle="-1" stanceScale="1.9" stuntReactionTimeOut="3" bThermalVision="0" velBase="1" velScale="0.03">
+      <TargetTracks classThreat="1" targetLimit="0"/>
+     </Perception>
+     <RateOfDeath accuracy="1" attackrange="70" reactionTime="1"/>
+     <Readability bIgnoreAnimations="0" bIgnoreVoice="0"/>
+    </Properties>
+    <Properties2 bAutoDisable="1" groupid="173" soclasses_SmartObjectClass="" nVariation="0">
+     <AI bHostileIfAttacked="0"/>
+     <AITerritoryAndWave aiterritory_Territory="&lt;None&gt;" aiwave_Wave="&lt;None&gt;"/>
+    </Properties2>
+    <FlowGraph Description="" Group="mission" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="134" Class="UI:Display:Display" pos="118.27987,1397.7675,0" flags="0">
+       <Inputs uiElements_Element="TargetPoint" instanceID="-1"/>
+      </Node>
+      <Node Id="135" Class="Start" pos="-350,1030,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="136" Class="Entity:EntityScreenPos" pos="-20,1080,0" flags="0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="137" Class="Math:Mul" pos="550,1010,0" flags="0">
+       <Inputs A="0" B="1144"/>
+      </Node>
+      <Node Id="138" Class="Math:Mul" pos="520,1240,0" flags="0">
+       <Inputs A="0" B="520"/>
+      </Node>
+      <Node Id="139" Class="UI:Functions:TargetPoint:setTPPos" pos="1110,1030,0" flags="0">
+       <Inputs instanceID="-1" _floatPosx="0" _floatPosy="0" _distance=""/>
+      </Node>
+      <Node Id="153" Class="Logic:XOR" pos="180,990,0" flags="0">
+       <Inputs A="0" B="1" Always="1"/>
+      </Node>
+      <Node Id="155" Class="Logic:Condition" pos="360,990,0" flags="0">
+       <Inputs Condition="0"/>
+      </Node>
+      <Node Id="160" Class="Logic:Any" pos="660,920,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="163" Class="Logic:Any" pos="680,1120,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="164" Class="Logic:XOR" pos="190,1220,0" flags="0">
+       <Inputs A="0" B="1" Always="1"/>
+      </Node>
+      <Node Id="165" Class="Logic:Condition" pos="330,1240,0" flags="0">
+       <Inputs Condition="0"/>
+      </Node>
+      <Node Id="167" Class="Math:SetNumber" pos="530,1320,0" flags="0">
+       <Inputs in="520"/>
+      </Node>
+      <Node Id="168" Class="Math:SetNumber" pos="434.08081,1096.7805,0" flags="0">
+       <Inputs in="1"/>
+      </Node>
+      <Node Id="177" Name="Target_Pointer" Class="_commentbox" pos="-360,709.13538,0" flags="0">
+       <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1409" Height="655"/>
+       <NodeSize Width="1409" Height="682.39063"/>
+      </Node>
+      <Node Id="191" Class="Entity:EntityPos" pos="-260,1890,0" flags="0">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
+      </Node>
+      <Node Id="196" Class="Game:LocalPlayer" pos="-220,1770,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="197" Class="Entity:GetPos" pos="-60,1790,0" flags="0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="206" Class="Vec3:FromVec3" pos="0,1930,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="207" Class="Vec3:FromVec3" pos="60,1840,0" flags="0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="208" Class="Math:Sub" pos="140,1950,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="209" Class="Math:Power" pos="270,1950,0" flags="0">
+       <Inputs base="0" power="2"/>
+      </Node>
+      <Node Id="210" Class="Math:Sub" pos="190,2030,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="211" Class="Math:Power" pos="280,2030,0" flags="0">
+       <Inputs base="0" power="2"/>
+      </Node>
+      <Node Id="212" Class="Math:Add" pos="430,2010,0" flags="0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="213" Class="Math:Power" pos="540,2020,0" flags="0">
+       <Inputs base="0" power="0.5"/>
+      </Node>
+      <Node Id="219" Name="Get_Target_Distance" Class="_commentbox" pos="-270,1559.1365,0" flags="0">
+       <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1160.6975" Height="323"/>
+       <NodeSize Width="1160.6975" Height="350.39063"/>
+      </Node>
+      <Node Id="220" Class="Entity:EntityId" pos="-660,1460,0" flags="0" EntityGUID="{500DE326-A929-474C-8D5C-F338C4989020}" EntityGUID_64="474CA929500DE326">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="224" Class="Math:Round" pos="570,1960,0" flags="0">
+       <Inputs In="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="134" nodeOut="135" portIn="show" portOut="output" enabled="1"/>
+      <Edge nodeIn="136" nodeOut="135" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="153" nodeOut="136" portIn="A" portOut="FalloffX" enabled="1"/>
+      <Edge nodeIn="155" nodeOut="136" portIn="In" portOut="Px" enabled="1"/>
+      <Edge nodeIn="164" nodeOut="136" portIn="A" portOut="FalloffY" enabled="1"/>
+      <Edge nodeIn="165" nodeOut="136" portIn="In" portOut="Py" enabled="1"/>
+      <Edge nodeIn="168" nodeOut="136" portIn="set" portOut="VisibleOnScreen" enabled="1"/>
+      <Edge nodeIn="160" nodeOut="137" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="163" nodeOut="138" portIn="in1" portOut="out" enabled="1"/>
+      <Edge nodeIn="155" nodeOut="153" portIn="Condition" portOut="out" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="155" portIn="A" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="160" portIn="_floatPosx" portOut="out" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="163" portIn="_floatPosy" portOut="out" enabled="1"/>
+      <Edge nodeIn="165" nodeOut="164" portIn="Condition" portOut="out" enabled="1"/>
+      <Edge nodeIn="138" nodeOut="165" portIn="A" portOut="OnTrue" enabled="1"/>
+      <Edge nodeIn="167" nodeOut="165" portIn="set" portOut="OnFalse" enabled="1"/>
+      <Edge nodeIn="163" nodeOut="167" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="168" portIn="Call" portOut="out" enabled="1"/>
+      <Edge nodeIn="196" nodeOut="168" portIn="update" portOut="out" enabled="1"/>
+      <Edge nodeIn="206" nodeOut="191" portIn="vec3" portOut="pos" enabled="1"/>
+      <Edge nodeIn="197" nodeOut="196" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="197" nodeOut="196" portIn="Get" portOut="onChange" enabled="1"/>
+      <Edge nodeIn="207" nodeOut="197" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="208" nodeOut="206" portIn="B" portOut="x" enabled="1"/>
+      <Edge nodeIn="210" nodeOut="206" portIn="B" portOut="y" enabled="1"/>
+      <Edge nodeIn="208" nodeOut="207" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="210" nodeOut="207" portIn="A" portOut="y" enabled="1"/>
+      <Edge nodeIn="209" nodeOut="208" portIn="base" portOut="out" enabled="1"/>
+      <Edge nodeIn="212" nodeOut="209" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="211" nodeOut="210" portIn="base" portOut="out" enabled="1"/>
+      <Edge nodeIn="212" nodeOut="211" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="213" nodeOut="212" portIn="base" portOut="out" enabled="1"/>
+      <Edge nodeIn="224" nodeOut="213" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="136" nodeOut="220" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="191" nodeOut="220" portIn="entityId" portOut="Id" enabled="1"/>
+      <Edge nodeIn="139" nodeOut="224" portIn="_distance" portOut="outRounded" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
    </Object>
   </LayerObjects>
  </Layer>

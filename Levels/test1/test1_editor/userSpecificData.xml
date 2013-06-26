@@ -1,0 +1,6 @@
+<UserFriendly>
+ <ObjectLayers>
+  <Layer Name="SpawnPoint" GUID="{503B6588-C2D9-41D8-A169-8D6D3F82C2E6}" Hidden="0" Frozen="0"/>
+  <Layer Name="Main" GUID="{10B13DAA-FDBD-45D7-AB19-D42B538357A3}" Hidden="0" Frozen="0"/>
+ </ObjectLayers>
+</UserFriendly>
