@@ -172,6 +172,13 @@
     </FlowGraph>
    </Object>
    <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{71A6FE3D-36D6-41FA-B854-8FCA31F0AC87}" Name="Teleporter_02" Pos="1060.9999,-383.99994,0" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Teleporter"/>
+   <Object Type="Entity" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{6563F141-5B27-4F3D-93EB-713F5907BC40}" Name="Door_01" Pos="445.99997,516.99994,672.99994" FloorNumber="-1" Rotate="0.82412618,0,0,0.56640625" Scale="0.75908411,0.75908411,0.75908405" ColorRGB="65535" Material="MapScreen" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="Door">
+    <Properties bActivatePortal="0" bLocked="0" fMass="0" fileModel="objects/structures/buildings/fishing_houses/fishing_house_door_a.cgf" soclasses_SmartObjectClass="Door" fUseDistance="2.5">
+     <Rotation fAcceleration="500" sAxis="z" sFrontAxis="-x" fRange="90" bRelativeToUser="1" fSpeed="200" fStopTime="0.125"/>
+     <Slide fAcceleration="3" sAxis="x" fRange="0" fSpeed="2" fStopTime="0.5"/>
+     <Sounds fRange="50" soundSoundOnMove="" soundSoundOnStop="" soundSoundOnStopClosed="" fVolume="1"/>
+    </Properties>
+   </Object>
    <Object Type="Solid" Layer="Main" LayerGUID="{12C773F1-7062-4E7D-9542-61B378BAD600}" Id="{5B446059-92D3-4C13-8790-D8D67841C859}" Name="Solid_01" Pos="531.49994,465.49994,686.49994" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="16776960" Material="materials/brick/brick_plaster_01" MatLayersMask="0" RndFlags="8" ViewDistRatio="100" LMQuality="1">
     <Brush ZeroTolerance="0">
      <Face p1="-21.499969,41.5,14.5" p2="-21.499969,-41.5,14.5" p3="-21.499969,-41.5,-14.5" NumberOfPoints="4" v0="0" v1="1" v2="2" v3="3" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0">
@@ -256,10 +263,10 @@
       <Node Id="168" Class="Math:SetNumber" pos="434.08081,1096.7805,0" flags="0">
        <Inputs in="1"/>
       </Node>
-      <Node Id="177" Name="Target_Pointer" Class="_commentbox" pos="-360,626.9635,0" flags="0">
+      <Node Id="177" Name="Target_Pointer" Class="_commentbox" pos="-360,672.61456,0" flags="0">
        <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1409" Height="655"/>
-       <NodeSize Width="1409" Height="764.5625"/>
+       <NodeSize Width="1409" Height="718.91144"/>
       </Node>
       <Node Id="191" Class="Entity:EntityPos" pos="-260,1890,0" flags="0">
        <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
@@ -294,10 +301,10 @@
       <Node Id="213" Class="Math:Power" pos="540,2020,0" flags="0">
        <Inputs base="0" power="0.5"/>
       </Node>
-      <Node Id="219" Name="Get_Target_Distance" Class="_commentbox" pos="-270,1476.9646,0" flags="0">
+      <Node Id="219" Name="Get_Target_Distance" Class="_commentbox" pos="-270,1522.6158,0" flags="0">
        <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
        <ResizeBorder X="0" Y="0" Width="1160.6975" Height="323"/>
-       <NodeSize Width="1160.6975" Height="432.5625"/>
+       <NodeSize Width="1160.6975" Height="386.91144"/>
       </Node>
       <Node Id="220" Class="Entity:EntityId" pos="-660,1460,0" flags="0" EntityGUID="{500DE326-A929-474C-8D5C-F338C4989020}" EntityGUID_64="474CA929500DE326">
        <Inputs entityId="0"/>

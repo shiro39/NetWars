@@ -42,7 +42,7 @@ end
 
 function MapTutorial:MapUpdate()
 	local MapFilePath = self.Properties.sMapFilePath;
-	local ScreenEnt = System.GetEntityByName("ScreenTest");
+	local ScreenEnt = System.GetEntityByName("Door_01");
 	if(ScreenEnt == nil) then
 	return end
 	
