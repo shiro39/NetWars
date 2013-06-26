@@ -1,0 +1,19 @@
+<UIElements name="Pointer">
+	<UIElement name="TargetPoint" render_lockless="1">
+		<GFx file="TargetPoint.swf" layer="1">
+			<Constraints>
+				<Align mode="fullscreen" scale="0" />
+			</Constraints>
+		</GFx>
+		<functions>
+			<function name="setTPPos" desc="" funcname="setTPPos">
+				<param name="_floatPosx" type="float" />
+				<param name="_floatPosy" type="float" />
+				<param name="_distance" type="string" />
+			</function>
+		</functions> 
+		<MovieClips>
+			<MovieClip name="TP" desc="TargetPoint" instancename="TP" />
+		</MovieClips>
+	</UIElement>
+</UIElements>
